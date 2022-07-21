@@ -1,0 +1,69 @@
+@charset "UTF-8"; /* PRO NAVEGADOR ENTENDER OS SINAIS EM PT-BR */
+
+* {  /* CONFIGURAÇÕES GERAIS DO SITE */
+    margin: 0px;
+    padding: 0px;
+}  
+
+html, body{
+    min-height: 100vh;  /* VIEWPORT HEIGHT */
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center; /* CENTRALIZA O CONTEUDO NO MEIO */
+}
+
+header > h1{
+    /* text-transform: uppercase;  TEXT TRANSFORM: MODIFICA TODAS AS LETRAS */
+
+    padding-top: 50px; /* PADDING - TOP: ESPAÇO ACIMA DA DIV */
+    padding-bottom: 15px;
+    font-variant: small-caps; /* PRIORIZA EM DEIXAR AS PRIMEIRAS LETRAS MAIORES */
+}
+
+header > p{
+    padding-bottom: 50px; /* ESPAÇO ABAIXO DA DIV */
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none; /* TIRA SUBLINHADO DO CONTEUDO */
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{ /* HOVER: ADICIONA UMA PROPRIEDADE AO PASSAR O MOUSE EM CIMA  */
+    text-decoration: underline;
+    color: red;
+}
+
+section{
+    padding-top: 10vh; /* PADDING VH: DA UM ESPAÇAMENTO DE 10VH DO CONTEUDO PRA CIMA*/
+    padding-bottom: 10vh; /* PADDING VH: DA UM ESPAÇAMENTO DE 10VH DO CONTEUDO PRA BAIXO */
+    line-height: 2em; /* AFASTA UM POUCOS AS FRASES, FACILITANDO A LEITURA */
+    padding-left: 30px /* AFASTA UM POUCO AS LETRAS DO LADO ESQUERDO DA TELA*/
+} 
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(53, 51, 51);
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px; /* LARGURA DA BOX PRETA*/
+    background-color: rgba(31, 29, 29, 0.336);
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
