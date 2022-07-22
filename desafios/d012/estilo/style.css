@@ -1,5 +1,16 @@
 @charset "UTF-8"; /* PRO NAVEGADOR ENTENDER OS SINAIS EM PT-BR */
 
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
+ /* IMPORTAR UMA FONTE DIRETA DO GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+
+:root{  /* CRIAR UMA VARIAVEL USANDO CSS */
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* FONTE PADRÃO */
+    --fonte2: 'Passion one' , cursive; /* NESSE CASO IREI ADICIONAR AOS TITULOS */
+    --fonte3: 'Sriracha', cursive; /* NESSE AOS CONTEUDOS */
+}
+
 * {  /* CONFIGURAÇÕES GERAIS DO SITE */
     margin: 0px;
     padding: 0px;
@@ -8,10 +19,11 @@
 html, body{
     min-height: 100vh;  /* VIEWPORT HEIGHT */
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header{
-    background-color: black;
+    background-image: linear-gradient(to bottom, black, rgba(43, 39, 39, 0.781) );
     color: white;
     text-align: center; /* CENTRALIZA O CONTEUDO NO MEIO */
 }
@@ -22,6 +34,8 @@ header > h1{
     padding-top: 50px; /* PADDING - TOP: ESPAÇO ACIMA DA DIV */
     padding-bottom: 15px;
     font-variant: small-caps; /* PRIORIZA EM DEIXAR AS PRIMEIRAS LETRAS MAIORES */
+    font-family: var(--fonte2);
+    font-size: 2.5em;
 }
 
 header > p{
@@ -42,22 +56,45 @@ section{
     padding-top: 10vh; /* PADDING VH: DA UM ESPAÇAMENTO DE 10VH DO CONTEUDO PRA CIMA*/
     padding-bottom: 10vh; /* PADDING VH: DA UM ESPAÇAMENTO DE 10VH DO CONTEUDO PRA BAIXO */
     line-height: 2em; /* AFASTA UM POUCOS AS FRASES, FACILITANDO A LEITURA */
-    padding-left: 30px /* AFASTA UM POUCO AS LETRAS DO LADO ESQUERDO DA TELA*/
+    padding-left: 30px; /* AFASTA UM POUCO AS LETRAS DO LADO ESQUERDO DA TELA*/
+    font-family: var(--fonte3);
+    font-size: 1.5em;
 } 
+
+#primeira{
+    background-image: url('/desafios/d012/imagens/background001.jpg');
+    background-position: center center;
+    background-attachment: fixed; /* DEIXA A IMAGEM FIXADA */
+}
+
+#segunda{
+    background-image: url('/desafios/d012/imagens/background002.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+}
 
 section.normal{
     background-color: white;
     color: black;
+    background-size: cover;
 }
 
 section.imagem{
     background-color: rgb(53, 51, 51);
     color: white;
+    background-size: cover; /* A IMAGEM SE ADAPTA AO TAMANHO */
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.445); /* INSET, SOMBRA DENTRO DA CAIXA */
+}
+
+section > p{
+    padding-bottom: 2em;
+    text-shadow: 1px 1px black;
 }
 
 section.imagem > p{
     width: 400px; /* LARGURA DA BOX PRETA*/
     background-color: rgba(31, 29, 29, 0.336);
+    
 
 }
 
