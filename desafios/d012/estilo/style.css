@@ -62,13 +62,13 @@ section{
 } 
 
 #primeira{
-    background-image: url('/desafios/d012/imagens/background001.jpg');
+    background-image: url('../imagens/background001.jpg');
     background-position: center center;
     background-attachment: fixed; /* DEIXA A IMAGEM FIXADA */
 }
 
 #segunda{
-    background-image: url('/desafios/d012/imagens/background002.jpg');
+    background-image: url('../imagens/background002.jpg');
     background-position: center center;
     background-attachment: fixed;
 }
