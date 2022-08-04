@@ -7,7 +7,6 @@
     <title>formulários</title>
     <style>
         *{
-            
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -16,6 +15,19 @@
             color: white;
         }
 
+        h1{
+            text-align: center;
+            background-image: linear-gradient(to bottom, blue, white);
+            padding: 10px;
+        }
+
+        input#enviar{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+
+        }
+        
     </style>
 </head>
 <body>
@@ -23,7 +35,7 @@
     <form>                  
         <p>Nome: <input type="text" name="nome" id=""></p> 
         <p>Sobrenome: <input type="text" name="sobrenome" id=""></p>
-        <input type="submit" value="Enviar">
+        <input type="submit"  id="enviar" value="Enviar">
 
         <!--Input 
             type="text" > cria a caixa de preenchimento de formnulário.
