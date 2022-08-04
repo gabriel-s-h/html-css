@@ -8,7 +8,7 @@
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
-        }
+         }
 
         html, body{
             background-color: black;
@@ -27,19 +27,26 @@
             padding: 10px;
 
         }
-        
+
     </style>
 </head>
 <body>
     <h1>meu primeiro formulario</h1>
-    <form>                  
-        <p>Nome: <input type="text" name="nome" id=""></p> 
-        <p>Sobrenome: <input type="text" name="sobrenome" id=""></p>
+    <form action="cadastro.php" autocomplete="off">                  
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p> 
+
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
         <input type="submit"  id="enviar" value="Enviar">
 
         <!--Input 
             type="text" > cria a caixa de preenchimento de formnulário.
             type=submit > cria a caixinha pra enviar seus dados.
+            form autocomplete="off" > desabilita as sugestões de preenchimento de formulário.
+            form action > envia os dados preenchidos do formulário a alguma linguagem de programação
+            label for > relaciona o formulário a frente ao dado a ser preenchido.
         -->
 
 
