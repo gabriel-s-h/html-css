@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formulário</h1>
+    <form action="cadastro.php" method="post">
+    <p>
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+    </p>
+
+    <p>
+        <label for="isen"> senha:</label>
+        <input type="password" name="sen" id="sen" required minlength="8">
+        
+    </p>
+
+    <p>
+        <input type="submit" value="enviar"> 
+        <input type="reset" value="Limpar">
+
+    </p>
+</form>
+
+     <!--required > nao permite enviar o formulário se estiver vazio-->
+
+     <!--minlength = maxlength > define o minimo ou maximo de caracteres para o sistema aceitar os dados preenchidos no formulário-->
+
+     <!-- value= submit > envia os dados preenchidos-->
+
+     <!-- value= reset >limpa os dados preenchidos-->
+
+    <!--Placeholder > adiciona uma dica de como preencher o formulário corretamente-->
+
+    <!--AUTOCOMPLETE
+        no form, voce pode usar duas funções apenas, on e off. 
+        no input, voce pode definir pra um formulário qual dado voce quer sugerir pra ele
+    -->
+</body>
+</html>
